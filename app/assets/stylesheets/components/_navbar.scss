@@ -1,0 +1,49 @@
+/* Style the navbar */
+#navbar {
+   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
+ background: white;
+ color: #a74581;
+ transition: all 0.3s ease;
+ height: 70px;
+ padding: 0px 30px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+/* Navbar links */
+#navbar a {
+  display: block;
+  color: #a74581;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+/* Page content */
+.content {
+  padding: 16px;
+}
+
+/* The sticky class is added to the navbar with JS when it reaches its scroll position */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+/* Add some top padding to the page content to prevent sudden quick movement (as the navigation bar gets a new position at the top of the page (position:fixed and top:0) */
+.sticky + .content {
+  padding-top: 60px;
+}
+.banner{
+  height: 100vh;
+}
+/* Right section */
+.navbar-wagon-right {
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+/* Logo */
+
