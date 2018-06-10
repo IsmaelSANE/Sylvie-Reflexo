@@ -1,0 +1,223 @@
+@import url(https://fonts.googleapis.com/css?family=Open+Sans);
+
+$green: #3AB54B;
+$black: #4a4a4a;
+$purple: #9013fe;
+$coral: #ff5858;
+$yellow: #f9cb5a;
+$blue: #48bbd1;
+
+.flex-row {
+  display: flex;
+  align-items: center;
+}
+
+.flex-column {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+}
+
+body {
+   font-family: 'Open Sans', sans-serif
+}
+
+/**/
+
+ul {
+  list-style-type: none;
+  margin: 0 auto;
+  padding-left: 0;
+  color: #A4A4A4;
+}
+
+.menu li{
+  font-size: 1.2em;
+  cursor: pointer;
+  width: 400px;
+  height: 80px;
+  object-fit: contain;
+  margin-top: 1em;
+  border-radius: 6px;
+  box-shadow: 0 0 5px 0 rgba(0, 0, 0, 0.07);
+  transition: .6s;
+  justify-content: flex-start;
+  padding-left: 2em;
+}
+.menu li:hover{
+ -webkit-transform: scale(1.07);
+ -ms-transform: scale(1.07);
+ transform: scale(1.07);
+ box-shadow: 0 0 10px 0 rgba(0, 0, 0, .2);
+}
+
+.show li{
+  color: white;
+}
+
+p{
+  font-size: 1em;
+}
+
+#slider-container{
+  width: 1400px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.menu{
+  width:50%
+}
+.show{
+  width:50%;
+  height: 100%;
+}
+
+.show .slide{
+  height: 500px;
+  width: 250px;
+  background-color: pink;
+  margin: 5%;
+  border-radius: 6px;
+  box-shadow: 1px 0 30px 0 rgba(0, 0, 0, 0.07);
+  padding: 55px 82px;
+  color: white;
+  display: none;
+  justify-content: flex-start;
+}
+
+.show .slide h4{
+  font-size: 1.2em;
+}
+
+.show .slide span{
+  font-size: 8em;
+}
+.show .slide span.euro{
+  font-size: 3em;
+  justify-content: flex-end;
+}
+
+.show .slide ul{
+  margin: 5% 1%;
+}
+
+.show .slide li + li{
+  margin-top: 1em;
+}
+
+.blue-slide, .yellow-slide, .coral-slide, .green-slide, .black-slide, .purple-slide{
+  animation: fadeInUp 1s;
+}
+
+
+.blue .show .blue-slide{
+  display: flex;
+}
+
+.yellow .show .yellow-slide{
+  display: flex;
+}
+
+.coral .show .coral-slide{
+  display: flex;
+}
+
+.green .show .green-slide{
+  display: flex;
+}
+
+
+
+/*ACTIVATED */
+
+.black{ .black-slide, .black-button{
+  display: flex;
+  background-color: $black;
+  color: white;}
+  .black-button{
+   transform: scale(1.05)
+  }
+}
+
+.purple{ .purple-slide, .purple-button{
+  display: flex;
+  background-color: $purple;
+  color: white;}
+  .purple-button{
+   transform: scale(1.05)
+  }
+}
+
+.green{ .green-slide, .green-button{
+  display: flex;
+  background-color: $green;
+  color: white;}
+  .green-button{
+   transform: scale(1.05)
+  }
+}
+
+.coral{ .coral-slide, .coral-button{
+  display: flex;
+  background-color: $coral;
+  color: white;}
+  .coral-button{
+   transform: scale(1.05)
+  }
+}
+
+.yellow{ .yellow-slide, .yellow-button{
+  display: flex;
+  background-color: $yellow;
+  color: white;}
+  .yellow-button{
+   transform: scale(1.05)
+  }
+}
+
+.blue{ .blue-slide, .blue-button{
+  display: flex;
+  background-color: $blue;
+  color: white;}
+  .blue-button{
+   transform: scale(1.05)
+  }
+}
+
+
+/*animation*/
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 100%, 0);
+    transform: translate3d(0, 100%, 0);
+  }
+
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
