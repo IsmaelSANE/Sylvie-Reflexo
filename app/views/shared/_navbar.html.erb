@@ -1,15 +1,14 @@
-<div id="navbar">
-  <!-- Logo -->
-  <%= link_to root_path, class: "navbar-sylvie-brand" do %>
-    <%= image_tag "logo.png", height: 150 %>
-  <% end %>
-
-  <!-- Right Navigation -->
-  <div class="navbar-wagon-right hidden-xs hidden-sm">
-
-      <a href="#presentation">Presentation</a>
-      <%= link_to "Reflexologies", "/pages/reflexologies", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Tarifs", "/pages/tarifs", class: "navbar-wagon-item navbar-wagon-link" %>
-      <%= link_to "Contact", "/pages/contact", class: "navbar-wagon-item navbar-wagon-link" %>
-    </div>
- </div>
+<header class="header-fixed">
+      <div class="header-limiter">
+        <h1><%= link_to root_path, class: "navbar-sylvie-brand" do %>
+        <%= image_tag "logo.png", height: 150 %>
+        <% end %></h1>
+        <nav>
+        <a href="#presentation">Qui suis-je ?</a>
+        <a href="#presentation">Presentation</a>
+        <%= link_to "Reflexologies", "/pages/reflexologies", class: "navbar-wagon-item navbar-wagon-link"%>
+        <%= link_to "Tarifs", "/pages/tarifs", class: "navbar-wagon-item navbar-wagon-link" %>
+        <%= link_to "Contact", "/pages/contact", class: "navbar-wagon-item navbar-wagon-link" %>
+        </nav>
+      </div>
+</header>
