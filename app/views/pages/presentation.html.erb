@@ -1,34 +1,56 @@
  <!-- MAIN CONTENT HERE -->
-<section class="hero">
-  <div class="hero-content">
-    <h1>Choose your favourite topic to study</h1>
-    <h3>"Watch Videos, read notes and have fun!"</h3>
-  </div>
-</section>
+<div class="banner" style="background: linear-gradient(-225deg, rgba(0,101,168,0.6) 0%, rgba(0,36,61,0.6) 50%), url(<%= image_path 'sylvie.jpg' %>);">
+      <div class="banner-content">
+        <h1>STIMULATION DES POINTS REFLEXES</h1>
+        <p>Sur rendez-vous au 1er Rue Paul Verlaine à Talence.</p>
+        <a class="btn-treehouse btn-lg">Laissez-vous tenter</a>
+      </div>
+</div>
 <div class="sylvie">
   <h1 class="big-text text-center">Qui suis-je ?</h1>
   <div class="wrap">
-  <div class="photo" style="background-image: url(<%= image_path 'sylvie.jpg' %>);"> </div>
-  <div class="prez">
-    <div> <h3>Sylvie Desclosayes</h3>
-      <br>
-      <br>
-      <p>
-      Mon premier métier est infirmière .
-      J'exerce depuis 25 ans en milieu hospitalier.<br> La douleur,la détresse sont mon lot quotidien. Soulager ces maux est ma priorité.<br> Les moyens à ma disposition sont vastes. La Réflexologie plantaire en est un, et qui plus est très efficace :<br>
+    <div class="container-fluid">
+        <div class="container">
+        <div class="top text-center">
+        <h1 id="title">Sylvie Desclosayes</h1>
+        <h4 id="subtitle"> Inférmiere au CHU de Bordeaux pellegrin et relfexologue par passion.</h4>
+
+        </div>
+
+        <div class="body">
+        <div class="row center"><%= image_tag "sylvie.jpg",alt: "Sylvie", width: 400, height: 400 %></div>
+        <div id="quote" class="text-center">
+        <h4 class="italic">"Mon premier métier est infirmière. J'exerce depuis 25 ans en milieu hospitalier. La douleur,la détresse sont mon lot quotidien. Soulager ces maux est ma priorité."</h4>
+        </div>
+
+        <div class="description">
+
+
+        <p text-center>
+      Les moyens à ma disposition sont vastes. La Réflexologie plantaire en est un, et qui plus est très efficace :<br>
       C'est une méthode douce ,facile à mettre en œuvre que je peux proposer aux patients dont je m'occupe à l'hôpital mais aussi en cabinet.<br>
       J'ai découvert la Réflexologie il y a 4 ans. Dès le départ de cette aventure, ce fut comme une évidence : cette méthode allait m'aider à aider les autres. <br>
       Après une formation d'environ 17 mois, j'ai obtenu une une certification validée par la Fédération Française de Réflexologie. Je pratique depuis, avec bonheur, cette discipline qui aide à mieux vivre, en meilleure forme et avec moins de douleur.<br>
       Une grossesse facilité, une douleur diminuée ou totalement soulagée, une sensation de détente profonde, une récupération sportive améliorée... sont autant de résultats obtenus, de personnes satisfaites et heureuses, qui me poussent à poursuivre cette aventure avec et pour vous.
       </p>
+        </div>
+        </div>
     </div>
-  </div>
-  </div>
 </div>
-<div class="histoire" style="background-image: url(<%= image_path 'unsplash.jpg' %>);">
-  <h1 class="big-text">Un peu d'histoire</h1>
 
+  </div>
 </div>
+  <div class="histoire" style="background-image: url(<%= image_path 'unsplash.jpg' %>);">
+    <h1 class="big-text text-center">Un peu d'histoire</h1>
+    <br>
+    <br>
+    <p>
+      La Réflexologie que je pratique prend ces racines chez les Incas (Pérou) 12000 ans avant JC.
+      Cette technique fut transmise aux Indiens d'Amérique du Nord qui l'utilisent encore aujourd'hui ;
+       William Fitzerald,médecin ORL en 1895 ,détermina 10 zones d'énergie égales du corps ,qu'il reproduisit sur les 2 pieds.
+      Puis, Eunice Imgham ,physiothérapeute de Floride,mis au point la cartographie des pieds telle que nous la connaissons aujourd'hui . Considérée comme la mère de la Réflexologie moderne,elle est aussi la fondatrice de l'Institut Internationnal de Réflexologie que son neveu le Dr Byers représente de nos jours.
+    </p>
+  </div>
 <div class="reflex">
   <h1 class="big-text text-center">Réflexologies</h1>
   <div class="container">
