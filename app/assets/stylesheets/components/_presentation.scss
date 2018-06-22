@@ -272,7 +272,7 @@ $base-font-title: "Dosis", arial, tahoma, verdana;
 $base-font-color: #726f77;
 
 // Timeline
-$timeline-color: $primary-color;
+$timeline-color: #293f78;
 
 
 // Mixins and Placeholders
@@ -394,7 +394,7 @@ h1, h2, h3, h4 {
         background: $timeline-color;
         color: #fff;
         margin: -20px -20px 0 -20px;
-        font-weight: 300;
+        font-weight: 120;
         @include prefix(border-radius, 3px 3px 0 0);
       }
 
@@ -425,7 +425,6 @@ h1, h2, h3, h4 {
   }
 }
 
-
 @media screen and (max-width: 768px) {
   #timeline {
     margin: 30px;
@@ -453,4 +452,8 @@ h1, h2, h3, h4 {
       }
     }
   }
+}
+.flexbox{
+  display: flex;
+  justify-content: space-around;
 }
