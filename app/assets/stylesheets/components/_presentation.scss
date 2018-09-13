@@ -127,7 +127,7 @@ body{
 .cards {
   display: flex;
 }
-.card {
+.carte {
   flex: 1 1 auto;
   margin: 10px;
   border-radius: 1px;
@@ -357,7 +357,7 @@ h1, h2, h3, h4 {
     display: table;
     width: 100%;
   }
-  
+
   .timeline-item {
     margin-bottom: 50px;
     position: relative;
@@ -403,11 +403,11 @@ h1, h2, h3, h4 {
         position: absolute;
         left: 45%;
         top: 20px;
-        width: 0; 
-        height: 0; 
+        width: 0;
+        height: 0;
         border-top: 7px solid transparent;
-        border-bottom: 7px solid transparent; 
-        border-left:7px solid $timeline-color; 
+        border-bottom: 7px solid transparent;
+        border-left:7px solid $timeline-color;
       }
 
       &.right {
@@ -433,12 +433,12 @@ h1, h2, h3, h4 {
     &:before {
       left: 0;
     }
-    
+
     .timeline-item {
       .timeline-content {
         width: 90%;
         float: right;
-        
+
         &:before, &.right:before {
           left: 10%;
           margin-left: -6px;
