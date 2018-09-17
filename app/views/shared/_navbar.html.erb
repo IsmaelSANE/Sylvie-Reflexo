@@ -1,7 +1,10 @@
 <header class="header-fixed">
-      <div class="header-limiter">
-        <h1><%= link_to root_path, class: "navbar-sylvie-brand" do %>
+
+  <div class="header-limiter">
+
+    <h1><a href="#"><span><%= link_to root_path, class: "navbar-sylvie-brand" do %>
         <%= image_tag "logo.png", height: 50 %>
+<<<<<<< HEAD
         <% end %></h1>
         <nav>
         <a href="#one">Qui suis-je ?</a>
@@ -11,4 +14,23 @@
         <%= link_to "Contact", "/pages/contact", class: "navbar-wagon-item navbar-wagon-link" %>
         </nav>
       </div>
+=======
+        <% end %></span></a></h1>
+
+    <nav>
+      <a href="#one">Qui suis-je ?</a>
+      <a href="#two">Presentation</a>
+      <%= link_to "Reflexologies", "/pages/reflexologies", class: "navbar-wagon-item navbar-wagon-link"%>
+      <%= link_to "Tarifs", "/pages/tarifs", class: "navbar-wagon-item navbar-wagon-link" %>
+      <%= link_to "Contact", "/pages/contact", class: "navbar-wagon-item navbar-wagon-link" %>
+    </nav>
+
+  </div>
+
+>>>>>>> 1a2bd619560c1c8f5fcf10761ea9cf8eb3d1c60d
 </header>
+
+<!-- You need this element to prevent the content of the page from jumping up -->
+<div class="header-fixed-placeholder"></div>
+
+<!-- The content of your page would go here. -->
