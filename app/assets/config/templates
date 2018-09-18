@@ -1,0 +1,4 @@
+# This will add app/assets/templates to asset lookup paths.
+#
+# Add the next line to your initializers or application.rb:
+Rails.application.config.assets.paths << Rails.root.join("app/assets/templates")
