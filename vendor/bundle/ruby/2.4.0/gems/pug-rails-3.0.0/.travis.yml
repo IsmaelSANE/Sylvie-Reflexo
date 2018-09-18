@@ -1,0 +1,42 @@
+language: ruby
+
+cache: bundler
+
+rvm:
+  - 2.1
+  - 2.2
+  - 2.3
+  - 2.4
+
+gemfile:
+  - gemfiles/rails_3.1.gemfile
+  - gemfiles/rails_3.2.gemfile
+  - gemfiles/rails_4.1_with_sprockets_2.gemfile
+  - gemfiles/rails_4.1_with_sprockets_3.gemfile
+  - gemfiles/rails_4.2_with_sprockets_2.gemfile
+  - gemfiles/rails_4.2_with_sprockets_3.gemfile
+  - gemfiles/rails_5.0.gemfile
+  - gemfiles/rails_5.1.gemfile
+
+matrix:
+  exclude:
+    - rvm:     2.1
+      gemfile: gemfiles/rails_5.0.gemfile
+    - rvm:     2.1
+      gemfile: gemfiles/rails_5.1.gemfile
+
+env:
+  - RAKE_ENV=test RAILS_ENV=test BUNDLE_PATH=vendor/bundle
+
+before_install:
+  - . $HOME/.nvm/nvm.sh
+  - nvm install stable
+  - nvm use stable
+  - npm install --global jade pug
+  - gem install bundler
+
+install:
+  - bundle install
+
+script:
+  - bundle exec rake test

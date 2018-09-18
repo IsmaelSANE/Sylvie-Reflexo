@@ -1,0 +1,15 @@
+current directory: /Users/utilisateur/code/Sylvie-Reflexo/vendor/bundle/ruby/2.4.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+/Users/utilisateur/.rbenv/versions/2.4.3/bin/ruby -r ./siteconf20180917-6171-1r1o2uy.rb extconf.rb
+creating Makefile
+
+current directory: /Users/utilisateur/code/Sylvie-Reflexo/vendor/bundle/ruby/2.4.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" clean
+
+current directory: /Users/utilisateur/code/Sylvie-Reflexo/vendor/bundle/ruby/2.4.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR="
+compiling websocket_mask.c
+linking shared-object websocket_mask.bundle
+
+current directory: /Users/utilisateur/code/Sylvie-Reflexo/vendor/bundle/ruby/2.4.0/gems/websocket-driver-0.7.0/ext/websocket-driver
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 websocket_mask.bundle ./.gem.20180917-6171-pmfq2m
