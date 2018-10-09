@@ -3,8 +3,6 @@ background-color: rgba(255, 255, 255, 0.8);
 
 }
 
-.sylvie{
-}
 .wrap{
   display: flex;
   justify-content: space-around;
@@ -38,7 +36,7 @@ background-color: rgba(255, 255, 255, 0.8);
 <<<<<<< HEAD
 
 =======
->>>>>>> 1a2bd619560c1c8f5fcf10761ea9cf8eb3d1c60d
+>>>>>>
         .testimonial{
             border-right: 4px solid #2A3D7D;
             box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.1);
@@ -458,3 +456,69 @@ h1, h2, h3, h4 {
   display: flex;
   justify-content: space-around;
 }
+.wrapper {
+    display: grid;
+    grid-template-columns: 400px 1fr 1fr 1fr;
+    grid-template-rows: 50% 25% 25%;
+    grid-column-gap: 20px;
+}
+.element {
+    grid-row: 1 / span 3;
+    grid-column: 1 / span 1;
+}
+.other-element {
+    grid-row: 1 / span 2;
+    grid-column: 2 / span 3;
+}
+.other-element2 {
+    grid-row: 3 / span 1;
+    grid-column: 2 / span 1;
+}
+.other-element3 {
+    grid-row: 3 / span 1;
+    grid-column: 3 / span 1;
+}
+.other-element4 {
+    grid-row: 3 / span 1;
+    grid-column: 4 / span 1;
+}
+@media(max-width: 720px) {
+  .grid {
+    /* re-define your grid for mobile and tablet */
+  }
+}
+.cardo {
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    max-width: 400px;
+    margin: auto;
+    text-align: center;
+}
+
+.title {
+    color: #284074;
+    font-size: 18px;
+}
+
+button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 8px;
+    color: white;
+    background-color: #284074;
+    text-align: center;
+    cursor: pointer;
+    width: 100%;
+    font-size: 18px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 22px;
+    color: black;
+}
+
+button:hover, a:hover {
+    opacity: 0.7;
+}
+

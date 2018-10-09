@@ -3,6 +3,7 @@
   visibility: hidden;
 }
 
+
 .fadeIn {
   animation-name: fadeIn;
   -webkit-animation-name: fadeIn;
@@ -30,7 +31,8 @@
     opacity: 1;
   }
 }
-.container{background:white;}
+.container1{background:#fef6fb;}
+
 .articles{
   display:flex;
   overflow:hidden;

@@ -1,10 +1,10 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans);
 
-$green: #3AB54B;
-$black: #4a4a4a;
-$purple: #9013fe;
-$coral: #ff5858;
-$yellow: #f9cb5a;
+$green: #AF7595;
+$black: #AFA2FF;
+$purple: #E3D7FF;
+$coral: #3A506B;
+$yellow: #1AC8ED;
 $blue: #48bbd1;
 
 .flex-row {
@@ -32,7 +32,7 @@ ul {
   color: #A4A4A4;
 }
 
-.menu li{
+.menui li{
   font-size: 1.2em;
   cursor: pointer;
   width: 400px;
@@ -45,7 +45,7 @@ ul {
   justify-content: flex-start;
   padding-left: 2em;
 }
-.menu li:hover{
+.menui li:hover{
  -webkit-transform: scale(1.07);
  -ms-transform: scale(1.07);
  transform: scale(1.07);
@@ -67,7 +67,7 @@ p{
   justify-content: space-between;
 }
 
-.menu{
+.menui{
   width:50%
 }
 .show{
@@ -77,7 +77,7 @@ p{
 
 .show .slide{
   height: 500px;
-  width: 250px;
+  width: 350px;
   background-color: pink;
   margin: 5%;
   border-radius: 6px;
@@ -105,7 +105,7 @@ p{
 }
 
 .show .slide li + li{
-  margin-top: 1em;
+  margin-top: 0px;
 }
 
 .blue-slide, .yellow-slide, .coral-slide, .green-slide, .black-slide, .purple-slide{
