@@ -1,3 +1,7 @@
+.cardo h1 {
+ margin: 1px;
+}
+
 .flotte {
   margin: 20px 10px 10px 0px;
 }
@@ -523,7 +527,8 @@ button {
     border: none;
     outline: 0;
     display: inline-block;
-    padding: 8px;
+    margin: 0px;
+    padding: 5px;
     color: white;
     background-color: #284074;
     text-align: center;
